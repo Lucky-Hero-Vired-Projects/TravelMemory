@@ -12,12 +12,9 @@
 
      <img width="1432" alt="instances" src="https://github.com/user-attachments/assets/34fdb6da-88b2-43ca-bba5-740e986b5b68">
 
-     
-     ![Image description](https://github.com/Lucky-Hero-Vired-Projects/TravelMemory/backend-Deployment-notes/images/instances.png)
-
    - Open the necessary ports for the backend (port 3000) and Nginx (port 80) via Security Groups.
-   
-      ![Image description](https://github.com/Lucky-Hero-Vired-Projects/TravelMemory/backend-Deployment-notes/images/backend-sg.png)
+  
+     <img width="1643" alt="backend-sg" src="https://github.com/user-attachments/assets/ef6da76a-c1a6-42b6-ab31-48f730c4549c">
     
 3. __Install Node.js and Git:__
    Connect to the EC2 instance via SSH or connect options  and run the following commands to install Node.js, npm, and Git:
@@ -34,7 +31,7 @@
    ```
    npm install
    ```
-   ![Image description](https://github.com/Lucky-Hero-Vired-Projects/TravelMemory/backend-Deployment-notes/images/backend_packages_install.png)
+   <img width="884" alt="backend_packages_install" src="https://github.com/user-attachments/assets/790d0c2b-28b8-479f-bfd9-e4eec7dffd8b">
 
 6. __Update .env file:__ Create a .env file and update it with database and other necessary configurations:
    ```
@@ -71,15 +68,14 @@
    npm install
    npm start
    ```
-   ![Image description](https://github.com/Lucky-Hero-Vired-Projects/TravelMemory/backend-Deployment-notes/images/backend_start.png)
-   
+   <img width="714" alt="backend_start" src="https://github.com/user-attachments/assets/0d02b7e8-739a-4ff9-92c7-301fecfdfee3">
 
 ### Step 2: Set Up Nginx as Reverse Proxy
 __1. Install Nginx:__ 
   ```
   sudo apt install nginx -y
   ```
-   ![Image description](https://github.com/Lucky-Hero-Vired-Projects/TravelMemory/backend-Deployment-notes/images/nginx-status.png)
+   <img width="1193" alt="nginx-status" src="https://github.com/user-attachments/assets/953e30c7-f568-4251-8acf-d6ee068d5543">
 
 __2. Configure Nginx for Reverse Proxy:__ Open the Nginx configuration file and add a new server block for the backend:
   ```
@@ -122,10 +118,9 @@ __4. Restart Backend server again:__ Restart the backend node.js in backend runi
    pm2 startup    
   
   ```
-  
-  ![Image description](https://github.com/Lucky-Hero-Vired-Projects/TravelMemory/backend-Deployment-notes/images/backend-server-start-portstatus.png)
-  
+  <img width="1020" alt="backend-server-start-portstatus" src="https://github.com/user-attachments/assets/51eec0b5-1a49-42af-865c-8bf8825de3ad">
 
 __Finally trying to access with public-ip:80__
 
-  ![Image description](https://github.com/Lucky-Hero-Vired-Projects/TravelMemory/backend-Deployment-notes/images/backend_browser-checking.png)
+  <img width="1706" alt="backend_browser-checking" src="https://github.com/user-attachments/assets/a9e0581f-afb0-433f-9be5-1f404273760d">
+
