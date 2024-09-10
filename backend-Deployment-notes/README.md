@@ -103,7 +103,7 @@ __3. Re-Start Nginx:__ First the nginx config and Restart the nginx with above c
    nginx -t
    systemctl restart nginx
    ```
-   ![Image description](TravelMemory/backend-Deployment-notes/images/nginx-test-status.png)
+   <img width="1188" alt="nginx-test-status" src="https://github.com/user-attachments/assets/01820718-9d76-427d-8315-f4b6ca536be8">
 
 __4. Restart Backend server again:__ Restart the backend node.js in backend runinng mode
   ```
