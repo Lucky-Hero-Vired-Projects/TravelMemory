@@ -10,11 +10,11 @@
 
    - Launch an Amazon EC2 instance with Ubuntu as the OS.
 
-     ![Image description](TravelMemory/backend-Deployment-notes/images/instances.png)
+     ![Image description](https://github.com/Lucky-Hero-Vired-Projects/TravelMemory/backend-Deployment-notes/images/instances.png)
 
    - Open the necessary ports for the backend (port 3000) and Nginx (port 80) via Security Groups.
    
-      ![Image description](TravelMemory/backend-Deployment-notes/images/backend-sg.png)
+      ![Image description](https://github.com/Lucky-Hero-Vired-Projects/TravelMemory/backend-Deployment-notes/images/backend-sg.png)
     
 2. __Install Node.js and Git:__
    Connect to the EC2 instance via SSH or connect options  and run the following commands to install Node.js, npm, and Git:
@@ -31,7 +31,7 @@
    ```
    npm install
    ```
-   ![Image description](TravelMemory/backend-Deployment-notes/images/backend_packages_install.png)
+   ![Image description](https://github.com/Lucky-Hero-Vired-Projects/TravelMemory/backend-Deployment-notes/images/backend_packages_install.png)
 
 5. __Update .env file:__ Create a .env file and update it with database and other necessary configurations:
    ```
@@ -68,7 +68,7 @@
    npm install
    npm start
    ```
-   ![Image description](TravelMemory/backend-Deployment-notes/images/backend_start.png)
+   ![Image description](https://github.com/Lucky-Hero-Vired-Projects/TravelMemory/backend-Deployment-notes/images/backend_start.png)
    
 
 ### Step 2: Set Up Nginx as Reverse Proxy
@@ -76,7 +76,7 @@ __1. Install Nginx:__
   ```
   sudo apt install nginx -y
   ```
-   ![Image description](TravelMemory/backend-Deployment-notes/images/nginx-status.png)
+   ![Image description](https://github.com/Lucky-Hero-Vired-Projects/TravelMemory/backend-Deployment-notes/images/nginx-status.png)
 
 __2. Configure Nginx for Reverse Proxy:__ Open the Nginx configuration file and add a new server block for the backend:
   ```
@@ -109,11 +109,20 @@ __3. Re-Start Nginx:__ First the nginx config and Restart the nginx with above c
 __4. Restart Backend server again:__ Restart the backend node.js in backend runinng mode
   ```
   npm start &
+   
+   or
+
+   npm install -g pm2
+   pm2 start index.js --name travelmemory-backend
+   pm2 logs travelmemory-backend
+   pm2 list
+   pm2 startup    
+  
   ```
   
-  ![Image description](TravelMemory/backend-Deployment-notes/images/backend-server-start-portstatus.png)
+  ![Image description](https://github.com/Lucky-Hero-Vired-Projects/TravelMemory/backend-Deployment-notes/images/backend-server-start-portstatus.png)
   
 
 __Finally trying to access with public-ip:80__
 
-  ![Image description](TravelMemory/backend-Deployment-notes/images/backend_browser-checking.png)
+  ![Image description](https://github.com/Lucky-Hero-Vired-Projects/TravelMemory/backend-Deployment-notes/images/backend_browser-checking.png)

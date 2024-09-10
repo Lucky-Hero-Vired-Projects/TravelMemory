@@ -75,3 +75,4 @@ __7. Start the Frontend:__
 __8. Access fron Browser:__ After starting the react server, can login from browser with nginx ip address:port number
 
    ![Image description](TravelMemory/frontend-deployment-notes/images/frontend-ui.png)
+   ![Image description](TravelMemory/frontend-deployment-notes/images/frontend-ui1.png)
