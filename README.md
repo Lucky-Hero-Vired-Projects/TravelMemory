@@ -29,7 +29,7 @@ Add this data into DB, Data format to be added:
 
 ### From frontend application confoguration see the readme.md page in frontend-Deployement-notes
 
-__Task 4: Scaling the Application with Load Balancer:__
+__Task : Scaling the Application with Load Balancer:__
 
 - __Launch Additional EC2 Instances:__ Create multiple EC2 instances running both the frontend and backend of the TravelMemory application.
 
@@ -45,3 +45,14 @@ __Task 4: Scaling the Application with Load Balancer:__
 
   <img width="1452" alt="LB" src="https://github.com/user-attachments/assets/f52276bd-d3dd-45c4-94b8-b21d747191a9">
 
+__Task 4. Domain Setup with Cloudflare:__
+
+ - Instead of Cloudflare I have used infinityfree.com for free DNS (https://dash.infinityfree.com/)
+ - Signup the infinityfree website and activate
+ - Click on Account and click on DNS records
+ - Choose Create new Recoed and load Balancer dns
+ - try to login with new cname.
+
+ image
+
+ 
