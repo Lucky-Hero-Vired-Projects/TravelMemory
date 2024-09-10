@@ -6,7 +6,7 @@ __1. Provision EC2 Instance:__
 
    - Launch an Amazon EC2 instance with Ubuntu as the OS.
 
-     ![Image description](TravelMemory/frontend-deployment-notes/images/instances.png)
+  <img width="1432" alt="instances" src="https://github.com/user-attachments/assets/6d85c16f-5378-474f-9e0b-3e96be36b85a">
 
 __2. Install Node.js and Git:__
    Connect to the EC2 instance via SSH or connect options  and run the following commands to install Node.js, npm, and Git:
@@ -31,9 +31,9 @@ __5. Install Frontend Dependencies and Build:__
   npm install
   npm run build
   ```
-  ![Image description](TravelMemory/frontend-deployment-notes/images/npm-install.png)
+  <img width="1646" alt="npm-install" src="https://github.com/user-attachments/assets/05c5cc25-ad7f-4852-88a0-42af02a37cba">
 
-  ![Image description](TravelMemory/frontend-deployment-notes/images/npm-build.png)
+  <img width="1302" alt="npm-build" src="https://github.com/user-attachments/assets/c4fd77ac-6b4e-4ee1-96e7-72403d33a392">
 
 __6. Deploy Frontend Using Nginx:__  Deploy a React application using Nginx proxy
 
@@ -64,15 +64,16 @@ __6. Deploy Frontend Using Nginx:__  Deploy a React application using Nginx prox
    nginx -t
    systemctl restart nginx
    ```
-    ![Image description](TravelMemory/frontend-deployment-notes/images/frontend-nginx-status.png)
+    <img width="1187" alt="frontend-nginx-status" src="https://github.com/user-attachments/assets/c660eabf-3f18-40f9-964f-3765454e53d3">
 
 __7. Start the Frontend:__ 
    ```
     npm start &
    ```
-   ![alt text](TravelMemory/frontend-deployment-notes/images/frontend-start.png)
-    
+   <img width="505" alt="frontend-start" src="https://github.com/user-attachments/assets/a052f63b-b80d-4c73-8aeb-f99d2073b9f1">
+
 __8. Access fron Browser:__ After starting the react server, can login from browser with nginx ip address:port number
 
-   ![Image description](TravelMemory/frontend-deployment-notes/images/frontend-ui.png)
-   ![Image description](TravelMemory/frontend-deployment-notes/images/frontend-ui1.png)
+   <img width="1636" alt="frontend-ui" src="https://github.com/user-attachments/assets/dde7698f-2989-47ea-986e-a4ac425cdca7">
+   <img width="1707" alt="frontend-ui1" src="https://github.com/user-attachments/assets/bb5f7862-12fb-40b8-b0bb-c22e5abb3bd2">
+
