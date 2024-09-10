@@ -52,7 +52,12 @@ __Task 4. Domain Setup with Cloudflare:__
  - Click on Account and click on DNS records
  - Choose Create new Recoed and load Balancer dns
  - try to login with new cname.
+   
+<img width="1443" alt="infinityfree" src="https://github.com/user-attachments/assets/584170d3-5c2d-47ee-bd3b-d46dac7639e3">
 
- image
+<img width="1602" alt="dns" src="https://github.com/user-attachments/assets/f11818f9-2287-4df0-9336-713a6b72c84b">
+
+
+ 
 
  
