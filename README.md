@@ -7,7 +7,7 @@ MONGO_URI='ENTER_YOUR_URL'
 PORT=3001
 ```
 
-Data format to be added: 
+Add this data into DB, Data format to be added: 
 
 ```json
 {
@@ -35,9 +35,13 @@ __Task 4: Scaling the Application with Load Balancer:__
 
 - __Set Up Load Balancer:__ Use AWS Elastic Load Balancer (ELB) to distribute traffic across your EC2 instances:
 
-- Go to the EC2 Dashboard and click Load Balancers.
+- Go to the EC2 Dashboard and click on Target Groups and Create Target Groups.
+- Go to the EC2 Dashboard and click on Load Balancer and Create Load Balancers.
 - Create a new Application Load Balancer.
 - Add all the instances running the backend under the Target Group.
 - Configure Load Balancer Listener: Set the listener to forward traffic to your EC2 instances on port 80 (Nginx proxy).
 
-![Image description](TravelMemory/frontend-deployment-notes/images/LB.png)
+  <img width="1433" alt="tg" src="https://github.com/user-attachments/assets/d59f0fc7-acb5-4f91-9f9b-f60089f0b7bf">
+
+  <img width="1452" alt="LB" src="https://github.com/user-attachments/assets/f52276bd-d3dd-45c4-94b8-b21d747191a9">
+
