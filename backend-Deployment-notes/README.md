@@ -10,30 +10,33 @@
 
    - Launch an Amazon EC2 instance with Ubuntu as the OS.
 
+     <img width="1432" alt="instances" src="https://github.com/user-attachments/assets/34fdb6da-88b2-43ca-bba5-740e986b5b68">
+
+     
      ![Image description](https://github.com/Lucky-Hero-Vired-Projects/TravelMemory/backend-Deployment-notes/images/instances.png)
 
    - Open the necessary ports for the backend (port 3000) and Nginx (port 80) via Security Groups.
    
       ![Image description](https://github.com/Lucky-Hero-Vired-Projects/TravelMemory/backend-Deployment-notes/images/backend-sg.png)
     
-2. __Install Node.js and Git:__
+3. __Install Node.js and Git:__
    Connect to the EC2 instance via SSH or connect options  and run the following commands to install Node.js, npm, and Git:
    ```
    sudo apt update
    sudo apt install nodejs npm git net-tools -y
    ```
-3. __Clone the TravelMemory Repository:__ Clone the TravelMemory repository from GitHub
+4. __Clone the TravelMemory Repository:__ Clone the TravelMemory repository from GitHub
    ```
    git clone git@github.com:Lucky-Hero-Vired-Projects/TravelMemory.git
    cd TravelMemory/backend/
    ```
-4. __Install Backend Dependencies:__ Install the required dependencies for the backend:
+5. __Install Backend Dependencies:__ Install the required dependencies for the backend:
    ```
    npm install
    ```
    ![Image description](https://github.com/Lucky-Hero-Vired-Projects/TravelMemory/backend-Deployment-notes/images/backend_packages_install.png)
 
-5. __Update .env file:__ Create a .env file and update it with database and other necessary configurations:
+6. __Update .env file:__ Create a .env file and update it with database and other necessary configurations:
    ```
    PORT=3000
    DATABASE_URL='mongodb+srv://lucky1225:<password>@lucky1225.eunoihl.mongodb.net/'
